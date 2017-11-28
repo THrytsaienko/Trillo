@@ -87,7 +87,6 @@
         position: absolute;
         top: 1.5rem;
         right: 1.1rem;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,22 +105,19 @@
 .side-nav {
     font-size: 1.4rem;
     list-style: none;
-    margin-top: 3.5rem;
-    @media only screen and (max-width: $bp-medium) {
-        display: flex;
-        margin: 0;
-    }
+    margin-top: 3.5rem; // @media only screen and (max-width: $bp-medium) {
+    //     display: flex;
+    //     margin: 0;
+    // }
     &__item {
         position: relative;
         &:not(:last-child) {
-            margin-bottom: .5rem;
-            @media only screen and (max-width: $bp-medium) {
-                margin: 0;
-            }
-        }
-        @media only screen and (max-width: $bp-medium) {
-            flex: 1;
-        }
+            margin-bottom: .5rem; //         @media only screen and (max-width: $bp-medium) {
+            //             margin: 0;
+            //         }
+        } //     @media only screen and (max-width: $bp-medium) {
+        //         flex: 1;
+        //     }
     }
     &__item::before {
         content: "";
@@ -152,27 +148,25 @@
         position: relative;
         z-index: 10;
         display: flex;
-        align-items: center;
-        @media only screen and (max-width: $bp-medium) {
-            justify-content: center;
-            padding: 2rem;
-        }
-        @media only screen and (max-width: $bp-small) {
-            flex-direction: column;
-            padding: 1.5rem .5rem;
-        }
+        align-items: center; //     @media only screen and (max-width: $bp-medium) {
+        //         justify-content: center;
+        //         padding: 2rem;
+        //     }
+        //     @media only screen and (max-width: $bp-small) {
+        //         flex-direction: column;
+        //         padding: 1.5rem .5rem;
+        //     }
     }
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
         margin-right: 2rem;
-        fill: currentColor;
-        @media only screen and (max-width: $bp-small) {
-            margin-right: 0;
-            margin-bottom: .7rem;
-            width: 1.5rem;
-            height: 1.5rem;
-        }
+        fill: currentColor; //     @media only screen and (max-width: $bp-small) {
+        //         margin-right: 0;
+        //         margin-bottom: .7rem;
+        //         width: 1.5rem;
+        //         height: 1.5rem;
+        //     }
     }
 }
 
@@ -186,4 +180,28 @@
     @media only screen and (max-width: $bp-medium) {
         display: none;
     }
+}
+
+////////////////////////////////////////
+// GALLERY
+.gallery {
+    display: flex;
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+////////////////////////////////////////
+// HOTEL OVERVIEW
+.overview {
+    &__heading {}
+    &__stars {}
+    &__icon-star,
+    &__icon-location {}
+    &__location {}
+    &__icon-location {}
+    &__rating {}
+    &__rating-average {}
+    &__rating-count {}
 }
